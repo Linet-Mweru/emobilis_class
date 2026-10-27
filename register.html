@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Thread & Tone</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">T&T <span>FASHION STUDIO</span></a>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="register.html">Register</a>
+    </nav>
+</header>
+
+<main>
+    <section class="register-hero">
+        <p class="eyebrow">YOUR CREATIVE JOURNEY STARTS HERE</p>
+        <h1>Let's Make <em>Something Great.</em></h1>
+        <p>Complete the form below to register your interest in our fashion programs.</p>
+    </section>
+
+    <div class="register-layout">
+        <section class="form-panel">
+            <h2>Registration Form</h2>
+            <p class="note">Fields marked with * are required.</p>
+
+            <form action="#" method="get">
+
+                <fieldset>
+                    <legend>01 — Personal Information</legend>
+
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname"
+                           placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@email.com" required>
+
+                    <label for="phone">Telephone Number *</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="+254 700 000000"
+                           pattern="[+0-9 ()-]{7,20}" required>
+
+                    <label for="birthdate">Date of Birth</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </fieldset>
+
+                <fieldset>
+                    <legend>02 — Program Selection</legend>
+
+                    <label for="program">Choose a Program *</label>
+                    <select id="program" name="program" required>
+                        <option value="">Select a program</option>
+                        <option>Fashion Design</option>
+                        <option>Garment Construction</option>
+                        <option>Pattern Drafting</option>
+                        <option>Digital Fashion</option>
+                        <option>Sustainable Fashion</option>
+                        <option>Fashion Entrepreneurship</option>
+                    </select>
+
+                    <label for="startdate">Preferred Start Date</label>
+                    <input type="date" id="startdate" name="startdate">
+
+                    <label for="hours">Available Hours Per Week</label>
+                    <input type="number" id="hours" name="hours"
+                           min="1" max="40" placeholder="Enter hours">
+
+                    <label for="portfolio">Portfolio Website URL</label>
+                    <input type="url" id="portfolio" name="portfolio"
+                           placeholder="https://example.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>03 — Learning Preferences</legend>
+
+                    <p class="field-title">Preferred Learning Format *</p>
+
+                    <label class="choice">
+                        <input type="radio" name="format"
+                               value="in-person" required>
+                        In-person
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="format" value="online">
+                        Online
+                    </label>
+
+                    <label class="choice">
+                        <input type="radio" name="format" value="hybrid">
+                        Hybrid
+                    </label>
+
+                    <p class="field-title">Areas of Interest</p>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="design">
+                        Fashion Design
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="sewing">
+                        Sewing and Garment Making
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="digital">
+                        Digital Fashion
+                    </label>
+
+                    <label class="choice">
+                        <input type="checkbox" name="interest" value="business">
+                        Fashion Business
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>04 — Additional Information</legend>
+
+                    <label for="experience">
+                        Describe Your Experience and Goals *
+                    </label>
+                    <textarea id="experience" name="experience" rows="5"
+                              placeholder="Tell us what you would like to learn..."
+                              required></textarea>
+
+                    <label for="referral">How Did You Hear About Us?</label>
+                    <select id="referral" name="referral">
+                        <option value="">Select an option</option>
+                        <option>Social Media</option>
+                        <option>Friend or Family</option>
+                        <option>School or College</option>
+                        <option>Internet Search</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label class="choice">
+                        <input type="checkbox" name="consent" required>
+                        I confirm that my information is correct. *
+                    </label>
+                </fieldset>
+
+                <section class="form-actions">
+                    <button type="submit">Submit Registration ↗</button>
+                    <button type="reset" class="reset-button">Clear Form</button>
+                </section>
+
+                <p class="note">
+                    This is a demonstration form. Submissions are not
+                    stored because no server or database is connected.
+                </p>
+
+            </form>
+        </section>
+
+        <aside class="sidebar">
+            <p class="eyebrow">NEED SOME HELP?</p>
+            <h2>We're Here to Help.</h2>
+            <p>
+                Not sure which program to choose? Start with the skills
+                you enjoy or the creative goals you want to achieve.
+            </p>
+
+            <h3>Registration Tips</h3>
+            <ul>
+                <li>Enter a valid email address.</li>
+                <li>Select your preferred program.</li>
+                <li>Describe your learning goals.</li>
+                <li>Check your information before submitting.</li>
+            </ul>
+
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <p>Email:</p>
+                <a href="mailto:hello@threadandtone.example">
+                    hello@threadandtone.example
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <section class="call-to-action">
+        <h2>Your Creative Story Starts Today.</h2>
+        <p>Explore our programs and discover what you can create.</p>
+        <a href="programs.html">Explore Programs ↗</a>
+    </section>
+</main>
+
+<footer>
+    <h2>THREAD & TONE</h2>
+    <p>Thoughtful fashion. Confident makers. Fresh perspectives.</p>
+
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="register.html">Register</a>
+    </div>
+
+    <p>© 2026 Thread & Tone Fashion Studio | Student Project</p>
+</footer>
+
+</body>
+</html>
